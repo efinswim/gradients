@@ -1,0 +1,36 @@
+body {
+    background: linear-gradient(to right, #00FFFF, #191970);
+}
+.menu {
+    display: flex;
+    background: linear-gradient(to right, #FFFAFA, #FFC0CB, #F0E68C, #808000);
+  }
+.menu li {
+    width: 200px;
+    list-style: none;
+    position: relative;
+} 
+.menu a {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.menu a:hover {
+    background: #F8F8FF;
+    transform: rotate(180deg);
+}
+.menu ul {
+    background: #F8F8FF;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.menu li:hover > ul {
+    display: block;
+}
+.menu ul ul {
+    left: 100%;
+    top: 0;
+}
