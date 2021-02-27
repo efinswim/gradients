@@ -17,11 +17,10 @@ body {
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 .menu a:hover {
-    background: #F8F8FF;
     transform: rotate(180deg);
 }
 .menu ul {
-    background: #F8F8FF;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
     position: absolute;
     display: none;
     top: 100%;
@@ -33,4 +32,27 @@ body {
 .menu ul ul {
     left: 100%;
     top: 0;
+}
+.div1 {
+    width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+.div2 {
+    width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+.div3 img {
+    position: absolute;
+    background-repeat: repeat;
+}
+.div3 span{
+    color: #fff;
+    position: relative;
 }
